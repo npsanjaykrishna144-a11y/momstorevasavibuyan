@@ -94,15 +94,34 @@ const AdminDashboard = () => {
     <div style={{ paddingBottom: '100px' }}>
       {/* Header */}
       <header className="glass-nav">
-        <div className="container flex justify-between items-center" style={{ height: '70px' }}>
-          <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--primary)' }}>
-            🛍️ Vasavi buyan — Admin
-          </h1>
-          <div className="flex items-center gap-4">
-            <a href="/" style={{ fontSize: '0.9rem', color: '#6b7280', textDecoration: 'underline' }}>View Store</a>
-            <button onClick={handleLogout} className="btn btn-secondary" style={{ padding: '8px 16px' }}>
-              <LogOut size={16} style={{ marginRight: '8px' }} /> Logout
-            </button>
+        <div className="container" style={{ padding: '10px 16px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '1.3rem' }}>🛍️</span>
+              <div>
+                <div style={{ fontWeight: '700', fontSize: '1rem', color: 'var(--primary)', lineHeight: 1.2 }}>Vasavi buyan</div>
+                <div style={{ fontSize: '0.72rem', color: '#9ca3af', lineHeight: 1.2 }}>Admin Panel</div>
+              </div>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <a href="/"
+                style={{
+                  fontSize: '0.8rem', fontWeight: '600', color: 'var(--primary)',
+                  border: '1.5px solid var(--primary)', padding: '7px 12px',
+                  borderRadius: '50px', whiteSpace: 'nowrap'
+                }}
+              >View Store</a>
+              <button onClick={handleLogout}
+                style={{
+                  fontSize: '0.8rem', fontWeight: '600', color: 'white',
+                  background: 'var(--danger)', border: 'none', padding: '7px 12px',
+                  borderRadius: '50px', cursor: 'pointer', whiteSpace: 'nowrap',
+                  display: 'flex', alignItems: 'center', gap: '4px'
+                }}
+              >
+                <LogOut size={14} /> Logout
+              </button>
+            </div>
           </div>
         </div>
       </header>

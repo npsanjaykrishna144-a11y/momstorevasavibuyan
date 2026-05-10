@@ -45,13 +45,20 @@ const Storefront = () => {
     <div style={{ paddingBottom: '100px' }}>
       {/* Header */}
       <header className="glass-nav">
-        <div className="container flex justify-between items-center" style={{ height: '70px' }}>
-          <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--primary)' }}>
-            {momDetails.name}
-          </h1>
-          <div className="flex items-center gap-4">
-            <a href="/admin" style={{ fontSize: '0.9rem', color: '#6b7280', textDecoration: 'underline' }}>Admin Login</a>
+        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ fontSize: '1.4rem' }}>🛍️</span>
+            <span style={{ fontWeight: '700', fontSize: '1.1rem', color: 'var(--primary)', whiteSpace: 'nowrap' }}>Vasavi buyan</span>
           </div>
+          <a
+            href="/admin"
+            style={{
+              fontSize: '0.82rem', fontWeight: '600', color: 'white',
+              background: 'linear-gradient(135deg, var(--primary), var(--secondary))',
+              padding: '8px 14px', borderRadius: '50px',
+              whiteSpace: 'nowrap', boxShadow: '0 2px 8px rgba(139,92,246,0.3)'
+            }}
+          >Admin Login</a>
         </div>
       </header>
 
